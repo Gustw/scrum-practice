@@ -1,0 +1,8 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url(#{resource['img/maldives.jpg']}) no-repeat center fixed;
+    background-size: cover;
+}

@@ -7,8 +7,6 @@ public class DestinationSelection {
 
     public Destination selectDestination(ArrayList<Destination> destinations, ArrayList<String> criteria ) {
 
-        Destination selectedDestination;
-
         for (Destination destination : destinations) {
 
             boolean flag = true;
@@ -17,12 +15,10 @@ public class DestinationSelection {
             if (!destination.getBudget().equals(criteria.get(1)))   flag = false;
             if (!destination.getActivity().equals(criteria.get(2))) flag = false;
 
-            if (flag == true) return destination;
+            if (flag) return destination;
         }
 
         return null;
-
     }
-
 
 }

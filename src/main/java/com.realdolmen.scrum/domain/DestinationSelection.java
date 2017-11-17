@@ -15,7 +15,7 @@ public class DestinationSelection {
 
             if (!destination.getClimate().equals(criteria.get(0))) flag = false;
             if (!destination.getBudget().equals(criteria.get(1)))   flag = false;
-            
+            if (!destination.getActivity().equals(criteria.get(2))) flag = false;
 
             if (flag == true) return destination;
         }
